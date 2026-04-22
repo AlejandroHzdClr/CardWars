@@ -33,13 +33,29 @@ public class Card : IDamageable
         cardList.Add(this);
     }
 
-    public virtual void OnAttack()
+    public virtual void OnAttack(IDamageable damageable)
     {
-        
+        if (Damage >= damageable.Damage)
+        {
+            damageable.TakeDamage(damageable);
+        }
     }
 
-    public void TakeDamage()
+    public void TakeDamage(IDamageable damageable)
     {
-        throw new NotImplementedException();
+        if (damageable.Damage >= Damage)
+        {
+            GetKo();
+        }
+    }
+
+    public int GettingCounter(Card card)
+    {
+        return Damage + card.Counter;
+    }
+
+    public virtual void GetKo()
+    {
+        
     }
 }

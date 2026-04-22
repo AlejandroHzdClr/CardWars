@@ -4,7 +4,8 @@ namespace CardWars.Player;
 
 public class Player : IPlayer, IDamageable
 {
-    private int lifes;
+    public int Lifes { get; private set; }
+    public int Damage { get; private set; }
     private Deck deck;
     
     
@@ -14,7 +15,12 @@ public class Player : IPlayer, IDamageable
         throw new NotImplementedException();
     }
 
-    public void TakeDamage()
+    public void TakeDamage(IDamageable damageable)
+    {
+        throw new NotImplementedException();
+    }
+
+    public void GetKo()
     {
         throw new NotImplementedException();
     }

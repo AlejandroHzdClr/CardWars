@@ -2,5 +2,9 @@ namespace CardWars.Interfaces;
 
 public interface IDamageable
 {
-    void TakeDamage();
+    int Damage { get; }
+    
+    void TakeDamage(IDamageable damage);
+
+    void GetKo();
 }
