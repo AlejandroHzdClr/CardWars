@@ -1,0 +1,15 @@
+C:\Users\alehd\RiderProjects\CardWars\CardWars\obj\Debug\net9.0\CardWars.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alehd\RiderProjects\CardWars\CardWars\obj\Debug\net9.0\CardWars.AssemblyInfoInputs.cache
+C:\Users\alehd\RiderProjects\CardWars\CardWars\obj\Debug\net9.0\CardWars.AssemblyInfo.cs
+C:\Users\alehd\RiderProjects\CardWars\CardWars\obj\Debug\net9.0\CardWars.csproj.CoreCompileInputs.cache
+C:\Users\alehd\RiderProjects\CardWars\CardWars\obj\Debug\net9.0\CardWars.sourcelink.json
+C:\Users\alehd\RiderProjects\CardWars\CardWars\bin\Debug\net9.0\CardWars.exe
+C:\Users\alehd\RiderProjects\CardWars\CardWars\bin\Debug\net9.0\CardWars.deps.json
+C:\Users\alehd\RiderProjects\CardWars\CardWars\bin\Debug\net9.0\CardWars.runtimeconfig.json
+C:\Users\alehd\RiderProjects\CardWars\CardWars\bin\Debug\net9.0\CardWars.dll
+C:\Users\alehd\RiderProjects\CardWars\CardWars\bin\Debug\net9.0\CardWars.pdb
+C:\Users\alehd\RiderProjects\CardWars\CardWars\obj\Debug\net9.0\CardWars.dll
+C:\Users\alehd\RiderProjects\CardWars\CardWars\obj\Debug\net9.0\refint\CardWars.dll
+C:\Users\alehd\RiderProjects\CardWars\CardWars\obj\Debug\net9.0\CardWars.pdb
+C:\Users\alehd\RiderProjects\CardWars\CardWars\obj\Debug\net9.0\CardWars.genruntimeconfig.cache
+C:\Users\alehd\RiderProjects\CardWars\CardWars\obj\Debug\net9.0\ref\CardWars.dll

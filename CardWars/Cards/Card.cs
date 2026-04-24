@@ -14,14 +14,16 @@ public enum CardTypes
 
 public class Card : IDamageable
 {
-    public int Damage { get; protected set; }
-    public int Cost { get; protected set; }
-    public CardTypes Effect { get; protected set; }
-    public int Counter { get; protected set; }
-    public bool State { get; protected set; }
+    public string Name { get; set; }
+    public int Damage { get; set; }
+    public int Cost { get; set; }
+    public CardTypes Effect { get; set; }
+    public int Counter { get; set; }
+    public bool State { get; set; }
 
-    protected Card(int damage, int cost, int counter)
+    public Card(string name,int damage, int cost, int counter)
     {
+        this.Name = name;
         this.Damage = damage;
         this.Cost = cost;
         this.Counter = counter;
@@ -35,9 +37,11 @@ public class Card : IDamageable
 
     public virtual void OnAttack(IDamageable damageable)
     {
+        Console.WriteLine(this.Name + " ha intentado atacar");
         if (Damage >= damageable.Damage)
         {
             damageable.TakeDamage(damageable);
+            Console.WriteLine(damageable.Name + " ha recibido el daño");
         }
     }
 
