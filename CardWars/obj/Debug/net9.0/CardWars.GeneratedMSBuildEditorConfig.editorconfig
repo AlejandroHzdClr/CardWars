@@ -24,5 +24,8 @@ build_property.EnableCodeStyleSeverity =
 [C:/Users/alehd/RiderProjects/CardWars/CardWars/App.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
+[C:/Users/alehd/RiderProjects/CardWars/CardWars/Views/CardView.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
 [C:/Users/alehd/RiderProjects/CardWars/CardWars/Views/MainWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
