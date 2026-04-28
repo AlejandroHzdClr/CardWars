@@ -13,3 +13,5 @@ C:\Users\alehd\RiderProjects\CardWars\CardWars\obj\Debug\net9.0\refint\CardWars.
 C:\Users\alehd\RiderProjects\CardWars\CardWars\obj\Debug\net9.0\CardWars.pdb
 C:\Users\alehd\RiderProjects\CardWars\CardWars\obj\Debug\net9.0\CardWars.genruntimeconfig.cache
 C:\Users\alehd\RiderProjects\CardWars\CardWars\obj\Debug\net9.0\ref\CardWars.dll
+C:\Users\alehd\RiderProjects\CardWars\CardWars\obj\Debug\net9.0\CardWars.csproj.AssemblyReference.cache
+C:\Users\alehd\RiderProjects\CardWars\CardWars\obj\Debug\net9.0\Avalonia\Resources.Inputs.cache

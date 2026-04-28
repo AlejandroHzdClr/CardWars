@@ -1,5 +1,4 @@
-﻿using CardWars.Cards;
-using CardWars.Player;
+﻿/*using CardWars.Cards;
 
 namespace CardWars;
 
@@ -34,10 +33,18 @@ class Program
         eduardo.PlayerDeck.Shuffle();
         eduardo.PlayerDeck.ShowCards();
         
-        alejandro.PlayerDeck.CardDeck[0].OnAttack(eduardo.PlayerDeck.CardDeck[0]);*/
+        alejandro.PlayerDeck.CardDeck[0].OnAttack(eduardo.PlayerDeck.CardDeck[0]);#1#
         
         
         
+        return 0;
+    }
+}*/
+
+class Program
+{
+    public static int Main()
+    {
         return 0;
     }
 }
