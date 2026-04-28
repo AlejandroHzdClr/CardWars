@@ -1,0 +1,39 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="CardWars.Views.CardView"
+             Width="180" Height="260">
+
+    <Border CornerRadius="10"
+            Background="#222"
+            BorderBrush="#555"
+            BorderThickness="2"
+            Padding="8">
+
+        <StackPanel Spacing="6">
+
+            <!-- Imagen -->
+            <Border Height="120" Background="#444" CornerRadius="6">
+                <Image Source="{Binding ImagePath}" Stretch="UniformToFill"/>
+            </Border>
+
+            <!-- Nombre -->
+            <TextBlock Text="{Binding Name}"
+                       FontSize="18"
+                       FontWeight="Bold"
+                       HorizontalAlignment="Center"/>
+
+            <!-- Coste -->
+            <TextBlock Text="{Binding Cost}"
+                       FontSize="14"
+                       HorizontalAlignment="Center"/>
+
+            <!-- Descripción -->
+            <TextBlock Text="{Binding Description}"
+                       FontSize="12"
+                       TextWrapping="Wrap"
+                       Foreground="#ccc"/>
+        </StackPanel>
+
+    </Border>
+
+</UserControl>

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ODBWLnw5dwo=",
+  "dgSpecHash": "qD++xJgRclU=",
   "success": true,
   "projectFilePath": "C:\\Users\\alehd\\RiderProjects\\CardWars\\CardWars\\CardWars.csproj",
   "expectedPackageFiles": [
@@ -15,6 +15,7 @@
     "C:\\Users\\alehd\\.nuget\\packages\\avalonia.reactiveui\\11.3.8\\avalonia.reactiveui.11.3.8.nupkg.sha512",
     "C:\\Users\\alehd\\.nuget\\packages\\avalonia.remote.protocol\\12.0.1\\avalonia.remote.protocol.12.0.1.nupkg.sha512",
     "C:\\Users\\alehd\\.nuget\\packages\\avalonia.skia\\12.0.1\\avalonia.skia.12.0.1.nupkg.sha512",
+    "C:\\Users\\alehd\\.nuget\\packages\\avalonia.themes.fluent\\12.0.1\\avalonia.themes.fluent.12.0.1.nupkg.sha512",
     "C:\\Users\\alehd\\.nuget\\packages\\avalonia.win32\\12.0.1\\avalonia.win32.12.0.1.nupkg.sha512",
     "C:\\Users\\alehd\\.nuget\\packages\\avalonia.x11\\12.0.1\\avalonia.x11.12.0.1.nupkg.sha512",
     "C:\\Users\\alehd\\.nuget\\packages\\dynamicdata\\8.4.1\\dynamicdata.8.4.1.nupkg.sha512",
