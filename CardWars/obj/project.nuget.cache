@@ -1,15 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "wd4P52Ub23c=",
+  "dgSpecHash": "XubL4Vsh2rc=",
   "success": true,
-  "projectFilePath": "C:\\Users\\alehd\\RiderProjects\\CardWars\\CardWars\\CardWars.csproj",
+  "projectFilePath": "C:\\Users\\Alejandro\\Documents\\GitHub\\CardWars\\CardWars\\CardWars.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\alehd\\.nuget\\packages\\csfml\\3.0.0\\csfml.3.0.0.nupkg.sha512",
-    "C:\\Users\\alehd\\.nuget\\packages\\sfml.audio\\3.0.0\\sfml.audio.3.0.0.nupkg.sha512",
-    "C:\\Users\\alehd\\.nuget\\packages\\sfml.graphics\\3.0.0\\sfml.graphics.3.0.0.nupkg.sha512",
-    "C:\\Users\\alehd\\.nuget\\packages\\sfml.net\\3.0.0\\sfml.net.3.0.0.nupkg.sha512",
-    "C:\\Users\\alehd\\.nuget\\packages\\sfml.system\\3.0.0\\sfml.system.3.0.0.nupkg.sha512",
-    "C:\\Users\\alehd\\.nuget\\packages\\sfml.window\\3.0.0\\sfml.window.3.0.0.nupkg.sha512"
+    "C:\\Users\\Alejandro\\.nuget\\packages\\csfml\\3.0.0\\csfml.3.0.0.nupkg.sha512",
+    "C:\\Users\\Alejandro\\.nuget\\packages\\raylib-cs\\7.0.2\\raylib-cs.7.0.2.nupkg.sha512",
+    "C:\\Users\\Alejandro\\.nuget\\packages\\sfml.audio\\3.0.0\\sfml.audio.3.0.0.nupkg.sha512",
+    "C:\\Users\\Alejandro\\.nuget\\packages\\sfml.graphics\\3.0.0\\sfml.graphics.3.0.0.nupkg.sha512",
+    "C:\\Users\\Alejandro\\.nuget\\packages\\sfml.net\\3.0.0\\sfml.net.3.0.0.nupkg.sha512",
+    "C:\\Users\\Alejandro\\.nuget\\packages\\sfml.system\\3.0.0\\sfml.system.3.0.0.nupkg.sha512",
+    "C:\\Users\\Alejandro\\.nuget\\packages\\sfml.window\\3.0.0\\sfml.window.3.0.0.nupkg.sha512"
   ],
   "logs": []
 }
