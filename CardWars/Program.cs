@@ -1,23 +1,16 @@
-﻿using SFML.Graphics;
-using SFML.System;
-using SFML.Window;
+﻿using Raylib_cs;
 
 class Program
 {
     static void Main()
     {
-        var window = new RenderWindow(
-            new VideoMode(new Vector2u(800, 600)),
-            "SFML en C#"
-        );
+        Raylib.InitWindow(1500, 900, "CardWars");
 
-        window.Closed += (_, __) => window.Close();
-
-        while (window.IsOpen)
+        while (!Raylib.WindowShouldClose())
         {
-            window.DispatchEvents();
-            window.Clear(Color.Black);
-            window.Display();
+            Raylib.BeginDrawing();
+            Raylib.ClearBackground(Color.DarkGreen);
+            Raylib.EndDrawing();
         }
     }
 }
