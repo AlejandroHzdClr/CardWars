@@ -14,52 +14,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d4930572-9b09-49b3-9bbd-e4f9c777e16d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Cards/CardDamageSystem.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cards/CardKoSystem.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cards/CardListener.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cards/CardMain.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameManager/GameManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameManager/Zones.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cards/Card.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cards/CardType/MainEffect.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cards/CardType/Normal.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cards/CardType/OnKO.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cards/CardType/OnPlay.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cards/CardType/WhenAttak.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cards/Deck.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EffectTypes/CampEffect/KoEffect.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EffectTypes/CampEffect/RestEffect.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EffectTypes/CampEffect/ReturnEffect.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EffectTypes/CostEffect/DecreaseCost.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EffectTypes/DamageEffect/DecreaseDamage.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EffectTypes/DamageEffect/IncreaseDamage.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EffectTypes/Effect.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EffectTypes/EnergyEffect/DecreaseCost.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EffectTypes/PaviseEffect/DecreaseEnemysDamage.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EffectTypes/PaviseEffect/IncreaseAllysDamage.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Interfaces/IDamageable.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Interfaces/IPlayer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Player/Hand.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Player/Player.cs" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/CardData/Agressive.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/CardData.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/CardFactory.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/CardRenderer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GameManager/GameLogic.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GameManager/GameState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CardWars.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CardWars.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cards/CardMain.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Cards/CardMain.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Table/PlayerCards.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Table/Table.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/CardWars.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net9.0/CardWars.deps.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/CardWars.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net9.0/CardWars.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/CardWars.exe" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net9.0/CardWars.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/CardWars.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net9.0/CardWars.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/CardWars.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net9.0/CardWars.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/CardWars.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net9.0/CardWars.AssemblyInfoInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/CardWars.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net9.0/CardWars.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/CardWars.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net9.0/CardWars.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/CardWars.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net9.0/CardWars.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/CardWars.genruntimeconfig.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net9.0/CardWars.genruntimeconfig.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/CardWars.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net9.0/CardWars.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/CardWars.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net9.0/CardWars.sourcelink.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net9.0/apphost.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/ref/CardWars.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net9.0/ref/CardWars.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/refint/CardWars.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net9.0/refint/CardWars.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/obj/rider.project.model.nuget.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,15 +44,25 @@
   <component name="DpaMonitoringSettings">
     <option name="firstShow" value="false" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JSON File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Cards/CardDamageSystem.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Cards/CardKoSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Cards/CardData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Cards/CardFactory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Cards/CardListener.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Cards/CardMain.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Cards/CardRenderer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GameManager/GameLogic.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/GameManager/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GameManager/GameState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/GameManager/Zones.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="McpProjectServerCommands">
@@ -157,7 +142,8 @@
       <updated>1777891796773</updated>
       <workItem from="1777891801360" duration="147000" />
       <workItem from="1778060243233" duration="5146000" />
-      <workItem from="1778076514478" duration="6991000" />
+      <workItem from="1778076514478" duration="8441000" />
+      <workItem from="1778144545696" duration="2208000" />
     </task>
     <servers />
   </component>

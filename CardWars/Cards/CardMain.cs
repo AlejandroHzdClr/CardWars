@@ -18,22 +18,31 @@ public enum Side
 
 public class CardMain
 {
-    public String Name;
-    public int Damage;
-    public int Cost;
-    public Side Owner;
-    public bool State;
+    public int Id { get; set; }
+
+    public string Name { get; set; }
+
+    public int Damage { get; set; }
+
+    public int Cost { get; set; }
+
+    public CardEvents EventType { get; set; }
+
+    public int EventValue { get; set; }
+
+    public Side Owner { get; set; }
+
+    public bool State { get; set; }
+
     public event Action<CardMain, CardMain, CardEvents, int> EventAction;
 
-    public event Action<List<CardMain>, CardEvents, int> AreaEventAction;
-    
-    protected void RaiseAction(CardMain target,CardEvents type, int damageCap)
+    protected void RaiseAction(CardMain target, CardEvents type, int value)
     {
-        EventAction?.Invoke(this, target , type, damageCap);
+        EventAction?.Invoke(this, target, type, value);
     }
-    
-    protected void RaiseAreaAction(List<CardMain> targets, CardEvents type, int damage)
+
+    public void Activate(CardMain target)
     {
-        AreaEventAction?.Invoke(targets, type, damage);
+        RaiseAction(target, EventType, EventValue);
     }
 }

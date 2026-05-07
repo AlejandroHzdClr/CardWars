@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "name": "Executioner",
+    "damage": 3000,
+    "cost": 5,
+    "eventType": "Ko",
+    "eventValue": 3
+  },
+  {
+    "id": 2,
+    "name": "Wind Mage",
+    "damage": 2000,
+    "cost": 4,
+    "eventType": "Return",
+    "eventValue": 4
+  },
+  {
+    "id": 3,
+    "name": "Ice Witch",
+    "damage": 1000,
+    "cost": 2,
+    "eventType": "Rest",
+    "eventValue": 0
+  },
+  {
+    "id": 4,
+    "name": "War Drummer",
+    "damage": 2000,
+    "cost": 3,
+    "eventType": "IncreaseDamage",
+    "eventValue": 1000
+  },
+  {
+    "id": 5,
+    "name": "Curse Priest",
+    "damage": 1500,
+    "cost": 4,
+    "eventType": "ReduceDamage",
+    "eventValue": 1000
+  },
+  {
+    "id": 6,
+    "name": "Shadow Assassin",
+    "damage": 3500,
+    "cost": 6,
+    "eventType": "Ko",
+    "eventValue": 5
+  },
+  {
+    "id": 7,
+    "name": "Tidal Guardian",
+    "damage": 2500,
+    "cost": 5,
+    "eventType": "Return",
+    "eventValue": 6
+  },
+  {
+    "id": 8,
+    "name": "Battle Monk",
+    "damage": 1800,
+    "cost": 2,
+    "eventType": "IncreaseDamage",
+    "eventValue": 1000
+  },
+  {
+    "id": 9,
+    "name": "Dark Ritualist",
+    "damage": 1200,
+    "cost": 3,
+    "eventType": "ReduceCost",
+    "eventValue": 4
+  },
+  {
+    "id": 10,
+    "name": "Stone Colossus",
+    "damage": 5000,
+    "cost": 7,
+    "eventType": "Rest",
+    "eventValue": 0
+  }
+]
