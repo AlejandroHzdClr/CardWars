@@ -34,11 +34,11 @@ public class CardMain
 
     public bool State { get; set; }
 
-    public event Action<CardMain, CardMain, CardEvents, int> EventAction;
+    public event Action<CardMain, CardEvents, int> EventAction;
 
     protected void RaiseAction(CardMain target, CardEvents type, int value)
     {
-        EventAction?.Invoke(this, target, type, value);
+        EventAction?.Invoke(target, type, value);
     }
 
     public void Activate(CardMain target)

@@ -1,4 +1,5 @@
-﻿using Raylib_cs;
+﻿using System.Diagnostics.Tracing;
+using Raylib_cs;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 using CardWars.Cards;
@@ -20,10 +21,17 @@ class Program
         var data = JsonSerializer.Deserialize<List<CardData>>(json, options);
 
         GameLogic game = new();
+        CardListener listener = new(game.Zone);
 
         foreach (var d in data)
         {
-            game.Cards.Add(CardFactory.Create(d));
+            game.Zone.PlayerZones.Field.Add(CardFactory.Create(d));
+            
+        }
+        
+        foreach (CardMain main in game.Zone.PlayerZones.Field)
+        {
+            listener.Listener(main);
         }
 
         Raylib.InitWindow(1500, 900, "CardWars - TCG Core");
@@ -39,11 +47,11 @@ class Program
             int centerX = screenWidth / 2;
 
             // DRAW HAND
-            for (int i = 0; i < game.Cards.Count; i++)
+            for (int i = 0; i < game.Zone.PlayerZones.Field.Count; i++)
             {
-                var card = game.Cards[i];
+                var card = game.Zone.PlayerZones.Field[i];
 
-                float offset = i - (game.Cards.Count - 1) / 2f;
+                float offset = i - (game.Zone.PlayerZones.Field.Count - 1) / 2f;
 
                 int x = centerX + (int)(offset * 80);
                 int y = 650 + (int)(Math.Abs(offset) * 10);

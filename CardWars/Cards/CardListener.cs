@@ -10,6 +10,11 @@ public class CardListener
     {
         Game = game;
     }
+
+    public void Listener(CardMain card)
+    {
+        card.EventAction += OnCardEvent;
+    }
     
     public void OnCardEvent(CardMain target, CardEvents type, int value1)
     {
@@ -47,14 +52,16 @@ public class CardListener
                 }
                 break;
             case CardEvents.ReduceDamage:
-                if (target.Damage >= 1000)
-                {
-                    target.Damage -= 1000;
-                }
-                else
-                {
-                    target.Damage = 0;
-                }
+                // if (target.Damage <= 1000)
+                // {
+                //     target.Damage = 0;
+                // }
+                // else
+                // {
+                //     target.Damage -= 1000;
+                // }
+                target.Damage -= 1000;
+                Console.WriteLine("He bajado daño");
 
                 break;
             case CardEvents.IncreaseDamage:

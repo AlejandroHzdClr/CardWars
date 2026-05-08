@@ -14,21 +14,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d4930572-9b09-49b3-9bbd-e4f9c777e16d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/CardData/Agressive.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cards/CardData.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cards/CardFactory.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cards/CardRenderer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameManager/GameLogic.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameManager/GameState.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CardWars.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CardWars.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cards/CardListener.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Cards/CardListener.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Cards/CardMain.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Cards/CardMain.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameManager/GameLogic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GameManager/GameLogic.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameManager/Zones.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GameManager/Zones.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/CardWars.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net9.0/CardWars.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/CardWars.exe" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net9.0/CardWars.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/CardWars.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net9.0/CardWars.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/CardWars.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net9.0/CardWars.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/CardWars.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net9.0/CardWars.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/CardWars.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net9.0/CardWars.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/CardWars.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net9.0/CardWars.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/CardWars.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net9.0/CardWars.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/CardWars.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net9.0/CardWars.sourcelink.json" afterDir="false" />
@@ -144,6 +140,8 @@
       <workItem from="1778060243233" duration="5146000" />
       <workItem from="1778076514478" duration="8441000" />
       <workItem from="1778144545696" duration="2208000" />
+      <workItem from="1778163998582" duration="3732000" />
+      <workItem from="1778237074169" duration="2474000" />
     </task>
     <servers />
   </component>
