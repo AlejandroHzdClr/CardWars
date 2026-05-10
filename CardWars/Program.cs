@@ -8,6 +8,7 @@ using CardWars.Rendering;
 
 class Program
 {
+    GameLogic game = new();
     static void Main()
     {
         string json = File.ReadAllText("../../../CardData/Agressive.json");
@@ -26,6 +27,7 @@ class Program
         foreach (var d in data)
         {
             game.Zone.PlayerZones.Field.Add(CardFactory.Create(d));
+            game.Zone.EnemyZones.Field.Add(CardFactory.Create(d));
             
         }
         
@@ -61,6 +63,22 @@ class Program
 
                 CardRenderer.Draw(card, x, y, hovered, selected);
             }
+            
+            // DRAW Enemy hand
+            for (int i = 0; i < game.Zone.EnemyZones.Field.Count; i++)
+            {
+                var card = game.Zone.EnemyZones.Field[i];
+
+                float offset = i - (game.Zone.EnemyZones.Field.Count - 1) / 2f;
+
+                int x = centerX + (int)(offset * 80);
+                int y = 0 + (int)(Math.Abs(offset) * 10);
+
+                bool hovered = card == game.HoveredCard;
+                bool selected = card == game.SelectedCard;
+
+                CardRenderer.Draw(card, x, y, hovered, selected);
+            }
 
             // PREVIEW
             if (game.HoveredCard != null)
@@ -77,6 +95,10 @@ class Program
                 Raylib.DrawText($"Cost: {c.Cost}", px + 10, py + 70, 25, Color.DarkBlue);
                 Raylib.DrawText($"Damage: {c.Damage}", px + 10, py + 110, 25, Color.Red);
                 Raylib.DrawText(c.EventType.ToString(), px + 10, py + 160, 20, Color.DarkGreen);
+                if (game.HoveredCard.EventValue != 0 && game.HoveredCard.EventValue < 1000)
+                {
+                    Raylib.DrawText($"Limit:{game.HoveredCard.EventValue.ToString()}", px + 10, py + 210, 20, Color.DarkGreen);
+                }
             }
 
             // STATE DEBUG

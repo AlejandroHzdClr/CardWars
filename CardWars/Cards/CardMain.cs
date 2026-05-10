@@ -33,6 +33,7 @@ public class CardMain
     public Side Owner { get; set; }
 
     public bool State { get; set; }
+    public bool CanAttack { get; set; }
 
     public event Action<CardMain, CardEvents, int> EventAction;
 
