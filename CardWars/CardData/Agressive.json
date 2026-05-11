@@ -4,79 +4,189 @@
     "name": "Executioner",
     "damage": 3000,
     "cost": 5,
-    "eventType": "Ko",
-    "eventValue": 3
+    "effects": [
+      {
+        "type": "KoEffect",
+        "maxCost": 3
+      }
+    ]
   },
   {
     "id": 2,
-    "name": "Wind Mage",
-    "damage": 2000,
-    "cost": 4,
-    "eventType": "Return",
-    "eventValue": 4
+    "name": "Executed",
+    "damage": 1000,
+    "cost": 1,
+    "effects": [
+      {
+        "type": "ReduceDamageEffect",
+        "amount": 1000
+      },
+      {
+        "type": "ReduceDamageEffect",
+        "amount": 1000
+      }
+    ]
   },
   {
     "id": 3,
-    "name": "Ice Witch",
-    "damage": 1000,
-    "cost": 2,
-    "eventType": "Rest",
-    "eventValue": 0
+    "name": "Ghost",
+    "damage": 3000,
+    "cost": 3,
+    "effects": [
+      {
+        "type": "IncreaseDamageEffect"
+      }
+    ]
   },
   {
     "id": 4,
-    "name": "War Drummer",
+    "name": "Knight Defender",
     "damage": 2000,
-    "cost": 3,
-    "eventType": "IncreaseDamage",
-    "eventValue": 1000
+    "cost": 2,
+    "effects": [
+      {
+        "type": "ReduceDamageEffect",
+        "amount": 500
+      }
+    ]
   },
   {
     "id": 5,
-    "name": "Curse Priest",
-    "damage": 1500,
-    "cost": 4,
-    "eventType": "ReduceDamage",
-    "eventValue": 1000
+    "name": "Dark Assassin",
+    "damage": 4000,
+    "cost": 6,
+    "effects": [
+      {
+        "type": "KoEffect",
+        "maxCost": 4
+      }
+    ]
   },
   {
     "id": 6,
-    "name": "Shadow Assassin",
-    "damage": 3500,
-    "cost": 6,
-    "eventType": "Ko",
-    "eventValue": 5
+    "name": "Priest Healer",
+    "damage": 1000,
+    "cost": 2,
+    "effects": [
+      {
+        "type": "RestEffect",
+        "amount": 2000
+      }
+    ]
   },
   {
     "id": 7,
-    "name": "Tidal Guardian",
+    "name": "Arcane Mage",
     "damage": 2500,
-    "cost": 5,
-    "eventType": "Return",
-    "eventValue": 6
+    "cost": 4,
+    "effects": [
+      {
+        "type": "IncreaseDamageEffect"
+      }
+    ]
   },
   {
     "id": 8,
-    "name": "Battle Monk",
-    "damage": 1800,
-    "cost": 2,
-    "eventType": "IncreaseDamage",
-    "eventValue": 1000
+    "name": "Time Wizard",
+    "damage": 1500,
+    "cost": 3,
+    "effects": [
+      {
+        "type": "ReduceCostEffect"
+      }
+    ]
   },
   {
     "id": 9,
-    "name": "Dark Ritualist",
-    "damage": 1200,
-    "cost": 3,
-    "eventType": "ReduceCost",
-    "eventValue": 4
+    "name": "Sea Serpent",
+    "damage": 3500,
+    "cost": 5,
+    "effects": [
+      {
+        "type": "ReturnEffect",
+        "amount": 1
+      }
+    ]
   },
   {
     "id": 10,
-    "name": "Stone Colossus",
+    "name": "Guardian Angel",
+    "damage": 2000,
+    "cost": 4,
+    "effects": [
+      {
+        "type": "RestEffect",
+        "amount": 3000
+      },
+      {
+        "type": "ReduceDamageEffect",
+        "amount": 500
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Flame Dragon",
     "damage": 5000,
     "cost": 7,
-    "eventType": "Rest",
-    "eventValue": 0
+    "effects": [
+      {
+        "type": "IncreaseDamageEffect"
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Shadow Thief",
+    "damage": 1800,
+    "cost": 2,
+    "effects": [
+      {
+        "type": "ReturnEffect",
+        "amount": 1
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Iron Giant",
+    "damage": 4500,
+    "cost": 6,
+    "effects": [
+      {
+        "type": "ReduceDamageEffect",
+        "amount": 1500
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Necromancer",
+    "damage": 2800,
+    "cost": 5,
+    "effects": [
+      {
+        "type": "KoEffect",
+        "maxCost": 2
+      },
+      {
+        "type": "RestEffect",
+        "amount": 1000
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Wind Ranger",
+    "damage": 2200,
+    "cost": 3,
+    "effects": [
+      {
+        "type": "ReduceCostEffect"
+      },
+      {
+        "type": "IncreaseDamageEffect"
+      }
+    ]
   }
 ]

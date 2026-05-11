@@ -1,3 +1,5 @@
+using CardWars.Interfaces;
+
 namespace CardWars.Cards;
 
 public enum CardEvents
@@ -26,24 +28,22 @@ public class CardMain
 
     public int Cost { get; set; }
 
-    public CardEvents EventType { get; set; }
-
-    public int EventValue { get; set; }
-
     public Side Owner { get; set; }
 
     public bool State { get; set; }
+    
     public bool CanAttack { get; set; }
+    
+    public List<ICardEffect> Effects { get; set; } = new();
 
-    public event Action<CardMain, CardEvents, int> EventAction;
+    public event Action<CardMain, ICardEffect>? EventAction;
 
-    protected void RaiseAction(CardMain target, CardEvents type, int value)
+    public void RaiseAction(CardMain target)
     {
-        EventAction?.Invoke(target, type, value);
-    }
-
-    public void Activate(CardMain target)
-    {
-        RaiseAction(target, EventType, EventValue);
+        foreach (ICardEffect cardEffect in Effects)
+        {
+            EventAction?.Invoke(target, cardEffect);
+        }
+        
     }
 }

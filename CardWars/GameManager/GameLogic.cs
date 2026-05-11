@@ -148,7 +148,7 @@ public class GameLogic
 
             if (!launchedEffect)
             {
-                LauncherCard.Activate(clicked);
+                LauncherCard.RaiseAction(clicked);
                 Console.WriteLine("Se lanzó");
                 launchedEffect = true;
             }

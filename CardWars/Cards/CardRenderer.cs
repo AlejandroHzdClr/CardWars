@@ -1,4 +1,5 @@
 using CardWars.Cards;
+using CardWars.Interfaces;
 using Raylib_cs;
 
 namespace CardWars.Rendering;
@@ -21,10 +22,11 @@ public static class CardRenderer
         Raylib.DrawText(card.Name, x + 10, y + 10, 20, Color.Black);
         Raylib.DrawText($"C:{card.Cost}", x + 10, y + 50, 20, Color.DarkBlue);
         Raylib.DrawText($"D:{card.Damage}", x + 10, y + 80, 20, Color.Red);
-        Raylib.DrawText(card.EventType.ToString(), x + 10, y + 120, 15, Color.DarkGreen);
-        if (card.EventValue != 0 && card.EventValue < 1000)
+        foreach (ICardEffect effect in card.Effects)
         {
-            Raylib.DrawText($"Limit:{card.EventValue.ToString()}", x + 10, y + 150, 15, Color.DarkGreen);
+            Raylib.DrawText(effect.GetDescription(), x + 10, y + 120, 15, Color.DarkGreen);
+            y += 30;
         }
+        
     }
 }

@@ -1,3 +1,5 @@
+using CardWars.Effects;
+
 namespace CardWars.Cards;
 
 public class CardData
@@ -13,4 +15,5 @@ public class CardData
     public CardEvents EventType { get; set; }
 
     public int EventValue { get; set; }
+    public IEnumerable<EffectData> Effects { get; set; }
 }

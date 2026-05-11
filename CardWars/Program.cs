@@ -4,6 +4,7 @@ using System.Text.Json;
 using System.Text.Json.Serialization;
 using CardWars.Cards;
 using CardWars.GameManager;
+using CardWars.Interfaces;
 using CardWars.Rendering;
 
 class Program
@@ -94,10 +95,10 @@ class Program
                 Raylib.DrawText(c.Name, px + 10, py + 10, 30, Color.Black);
                 Raylib.DrawText($"Cost: {c.Cost}", px + 10, py + 70, 25, Color.DarkBlue);
                 Raylib.DrawText($"Damage: {c.Damage}", px + 10, py + 110, 25, Color.Red);
-                Raylib.DrawText(c.EventType.ToString(), px + 10, py + 160, 20, Color.DarkGreen);
-                if (game.HoveredCard.EventValue != 0 && game.HoveredCard.EventValue < 1000)
+                foreach (ICardEffect effect in c.Effects)
                 {
-                    Raylib.DrawText($"Limit:{game.HoveredCard.EventValue.ToString()}", px + 10, py + 210, 20, Color.DarkGreen);
+                    Raylib.DrawText(effect.GetDescription(), px + 10, py + 150, 25, Color.DarkGreen);
+                    py += 40;
                 }
             }
 
