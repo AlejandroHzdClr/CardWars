@@ -19,29 +19,29 @@ class Program
         GameContext context = new GameContext(p1, p2);
 
         // ---------------------------
-        // INPUT + ENGINE
+        // ENGINE
         // ---------------------------
-        GameLogic input = new GameLogic(context);
+        GameLogic  logic    = new GameLogic(context);
         ActionResolver resolver = new ActionResolver();
-        GameLoop loop = new GameLoop(context, resolver, input.ActionQueue);
-
-        GameManager gameManager = new GameManager(input, loop);
-
-        // ---------------------------
-        // RENDERER (🔥 IMPORTANTE)
-        // ---------------------------
-        GameRenderer renderer = new GameRenderer(context, input);
+        GameLoop   loop     = new GameLoop(context, resolver, logic.ActionQueue);
+        GameManager gameManager = new GameManager(logic, loop);
 
         // ---------------------------
-        // LOAD CARDS
+        // RENDERER
+        // ---------------------------
+        GameRenderer renderer = new GameRenderer(context, logic);
+
+        // ---------------------------
+        // INPUT (necesita renderer para los rects)
+        // ---------------------------
+        InputSystem input = new InputSystem(logic, context, renderer);
+
+        // ---------------------------
+        // LOAD CARDS  →  al DECK, no al Field
         // ---------------------------
         string json = File.ReadAllText("../../../CardData/Agressive.json");
 
-        var options = new JsonSerializerOptions
-        {
-            PropertyNameCaseInsensitive = true
-        };
-
+        var options = new JsonSerializerOptions { PropertyNameCaseInsensitive = true };
         options.Converters.Add(new JsonStringEnumConverter());
 
         var data = JsonSerializer.Deserialize<List<CardData>>(json, options);
@@ -50,32 +50,45 @@ class Program
 
         foreach (var d in data)
         {
-            context.Player1.Field.Add(CardFactory.Create(d, context.Player1, context.Player1.Field));
-            context.Player2.Field.Add(CardFactory.Create(d, context.Player2, context.Player2.Field));
+            // FIX: las cartas van al Deck, no directamente al Field
+            var c1 = CardFactory.Create(d, context.Player1, context.Player1.Deck);
+            var c2 = CardFactory.Create(d, context.Player2, context.Player2.Deck);
+
+            context.Player1.Deck.Add(c1);
+            context.Player2.Deck.Add(c2);
+        }
+
+        // Barajar y repartir 5 cartas a la mano de cada jugador
+        context.Player1.Deck.Shuffle();
+        context.Player2.Deck.Shuffle();
+
+        for (int i = 0; i < 5; i++)
+        {
+            var card1 = context.Player1.Deck.Draw();
+            if (card1 != null) context.MoveCard(card1, context.Player1.Hand);
+
+            var card2 = context.Player2.Deck.Draw();
+            if (card2 != null) context.MoveCard(card2, context.Player2.Hand);
         }
 
         // ---------------------------
         // WINDOW
         // ---------------------------
-        Raylib.InitWindow(1500, 900, "CardWars DEBUG");
+        Raylib.InitWindow(1500, 900, "CardWars");
+        Raylib.SetTargetFPS(60);
 
         while (!Raylib.WindowShouldClose())
         {
-            // 🔥 INPUT + ENGINE
+            // FIX: loop.Update() ya se llama dentro de gameManager.Update()
+            // Llamarlo dos veces ejecutaba cada acción dos veces
+            input.Update();
+            input.HandleKeys();
             gameManager.Update();
-            loop.Update();
 
-            // ---------------------------
-            // RENDER
-            // ---------------------------
             Raylib.BeginDrawing();
-            Raylib.ClearBackground(Color.DarkGreen);
+            Raylib.ClearBackground(new Color(20, 50, 30, 255));
 
             renderer.Draw();
-
-            // DEBUG INFO
-            Raylib.DrawText($"P1: {context.Player1.Field.CardCount}", 20, 20, 20, Color.White);
-            Raylib.DrawText($"P2: {context.Player2.Field.CardCount}", 20, 50, 20, Color.White);
 
             Raylib.EndDrawing();
         }

@@ -2,8 +2,8 @@ using CardWars.Cards;
 using CardWars.Interfaces;
 
 namespace CardWars.Zones;
- 
-public class Deck : BaseZone
+
+public class Deck : BaseZone, ICardCollection // FIX: faltaba declarar ICardCollection
 {
     private Random rng = new();
 
@@ -16,9 +16,7 @@ public class Deck : BaseZone
         while (n > 1)
         {
             n--;
-
             int k = rng.Next(n + 1);
-
             (cards[k], cards[n]) = (cards[n], cards[k]);
         }
     }
@@ -29,9 +27,7 @@ public class Deck : BaseZone
             return null;
 
         CardMain top = cards[0];
-
         cards.RemoveAt(0);
-
         return top;
     }
 }
