@@ -12,8 +12,5 @@ public class CardData
 
     public int Cost { get; set; }
 
-    public CardEvents EventType { get; set; }
-
-    public int EventValue { get; set; }
-    public IEnumerable<EffectData> Effects { get; set; }
+    public List<EffectData> Effects { get; set; } = new();
 }

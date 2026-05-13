@@ -1,4 +1,5 @@
 using CardWars.Cards;
+using CardWars.Core;
 using CardWars.Interfaces;
 
 namespace CardWars.Effects;
@@ -12,11 +13,11 @@ public class RestEffect : ICardEffect
         _count = count;
     }
     
-    public void Execute(CardMain target, GameManager.GameManager game)
+    public void Execute(CardMain source, CardMain target, GameContext game)
     {
-        if (target.State && target.Cost >= _count)
+        if (target.CanAttack && target.Cost >= _count)
         {
-            target.State = false;
+            target.CanAttack = false;
         }
         else
         {

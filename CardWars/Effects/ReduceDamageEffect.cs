@@ -1,4 +1,5 @@
 using CardWars.Cards;
+using CardWars.Core;
 using CardWars.Interfaces;
 
 namespace CardWars.Effects;
@@ -12,7 +13,7 @@ public class ReduceDamageEffect : ICardEffect
         _amount = amount;
     }
     
-    public void Execute(CardMain target, GameManager.GameManager game)
+    public void Execute(CardMain source, CardMain target, GameContext game)
     {
         if (target.Damage >= _amount)
         {

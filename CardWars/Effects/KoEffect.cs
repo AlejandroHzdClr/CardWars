@@ -1,4 +1,5 @@
 using CardWars.Cards;
+using CardWars.Core;
 using CardWars.Interfaces;
 
 namespace CardWars.Effects;
@@ -12,20 +13,11 @@ public class KoEffect : ICardEffect
         _cost = cost;
     }
     
-    public void Execute(CardMain target, GameManager.GameManager game)
+    public void Execute(CardMain source, CardMain target, GameContext game)
     {
         if (target.Cost <= _cost)
         {
-            if (target.Owner == Side.Player)
-            {
-                game.PlayerZones.Graveyard.Add(target);
-                game.PlayerZones.Field.Remove(target);
-            }
-            else
-            {
-                game.EnemyZones.Graveyard.Add(target);
-                game.EnemyZones.Field.Remove(target);
-            }
+            game.MoveCard(target, target.Owner.Graveyard);
         }
     }
 

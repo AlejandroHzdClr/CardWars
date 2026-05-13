@@ -1,16 +1,8 @@
+using CardWars.Core;
 using CardWars.Interfaces;
+using CardWars.Zones;
 
 namespace CardWars.Cards;
-
-public enum CardEvents
-{
-    Ko,
-    Return,
-    Rest,
-    ReduceCost,
-    ReduceDamage,
-    IncreaseDamage
-}
 
 public enum Side
 {
@@ -28,22 +20,18 @@ public class CardMain
 
     public int Cost { get; set; }
 
-    public Side Owner { get; set; }
+    public Side OwnerSide { get; set; }
 
-    public bool State { get; set; }
-    
-    public bool CanAttack { get; set; }
-    
+    public PlayerState Owner { get; set; }
+
+    public bool CanAttack { get; set; } = true;
+
+    public IZone CurrentZone { get; set; }
+
     public List<ICardEffect> Effects { get; set; } = new();
 
-    public event Action<CardMain, ICardEffect>? EventAction;
-
-    public void RaiseAction(CardMain target)
+    public bool TakeDamage(int amount)
     {
-        foreach (ICardEffect cardEffect in Effects)
-        {
-            EventAction?.Invoke(target, cardEffect);
-        }
-        
+        return amount >= Damage;
     }
 }

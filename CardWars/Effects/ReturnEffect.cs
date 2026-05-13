@@ -1,4 +1,5 @@
 using CardWars.Cards;
+using CardWars.Core;
 using CardWars.Interfaces;
 
 namespace CardWars.Effects;
@@ -13,18 +14,9 @@ public class ReturnEffect : ICardEffect
         _count = count;
     }
     
-    public void Execute(CardMain target, GameManager.GameManager game)
+    public void Execute(CardMain source, CardMain target, GameContext game)
     {
-        if (target.Owner == Side.Player)
-        {
-            game.PlayerZones.Hand.Add(target);
-            game.PlayerZones.Field.Remove(target);
-        }
-        else
-        {
-            game.EnemyZones.Hand.Add(target);
-            game.EnemyZones.Field.Remove(target);
-        }
+        game.MoveCard(target, target.Owner.Hand);
     }
 
     public string GetDescription()
